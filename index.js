@@ -10,12 +10,16 @@ function hasTargetSum(array, target) {
     if(numIndex.has(com)){
       result[0]=numIndex.get(com);
       result[1]=i;
-      return result;
+      return true;
     }
     numIndex.set(num, i)
   }
-  return result;
-}
+  if(result === true){
+    return true
+    }else{
+      return false
+    }
+  }
 /* 
   Write the Big O time complexity of your function here
 */
